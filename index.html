@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Matthew Shan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</head>
+<body>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- Slide indicator-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slide content -->
+    <div class="carousel-inner">
+      <div class="carousel-item active thumbnail">
+        <a href="#about">
+          <img class="d-block w-100" src="imgs/coffee.jpg" style="width:100%;"/>
+          <div class="carousel-caption">
+            <h1>About me</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item thumbnail">
+        <a href="#cs">
+          <img class="d-block w-100" src="imgs/code.jpg" style="width:100%;"/>
+          <div class="carousel-caption">
+            <h1>Why Computer Science?</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item thumbnail">
+        <a href="#cs">
+          <img class="d-block w-100" src="imgs/journey.jpg" style="width:100%;"/>
+          <div class="carousel-caption">
+            <h1> My Journey in Detail </h1>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--Slide controls-->
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="content">
+    <h1 id="about"> <b>About me</b> </h1>
+
+    <h1 id="cs"> <b> Why Computer Science?</b> </h1>
+
+    <h1 id="school"> <b> My Journey in Detail </b> </h1>
+  </div>
+</body>
+</html>

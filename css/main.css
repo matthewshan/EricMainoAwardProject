@@ -46,10 +46,12 @@ html,body {
 .footer a{
   color: #3CC86E;
 }
-.footer h6 {
-  font-size: .2em;
+.footer h5 {
+  font-size: 3vh;
 }
-
+.footer h6 {
+  font-size: 2vh;
+}
 
 .school div {
   padding-left: 1em;

@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>window.Tether = {}</script>
+  <script src="js/bootstrap.min.js" ></script>
+  <script src="js/scripts.js" ></script>
 </head>
 <body>
   <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -23,7 +25,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active thumbnail">
         <a href="#about">
-          <img class="d-block w-100" src="imgs/coffee.jpg" style="width:100%;"/>
+          <img class="d-block w-100" src="imgs/coffee.jpg" alt="This is an image of a laptop and a cup of coffee" style="width:100%;"/>
           <div class="carousel-caption">
             <h1>About me</h1>
           </div>
@@ -32,7 +34,7 @@
 
       <div class="carousel-item thumbnail">
         <a href="#cs">
-          <img class="d-block w-100" src="imgs/code.jpg" style="width:100%;"/>
+          <img class="d-block w-100" src="imgs/code.jpg" alt="This is an image of a lap top and a cup of coffee" style="width:100%;"/>
           <div class="carousel-caption">
             <h1>Why Computer Science?</h1>
           </div>
@@ -40,10 +42,10 @@
       </div>
 
       <div class="carousel-item thumbnail">
-        <a href="#cs">
+        <a href="#school">
           <img class="d-block w-100" src="imgs/journey.jpg" style="width:100%;"/>
           <div class="carousel-caption">
-            <h1> My Journey in Detail </h1>
+            <h1> My Journey at GVSU in Detail </h1>
           </div>
         </a>
       </div>
@@ -61,11 +63,151 @@
   </div>
 
   <div class="content">
-    <h1 id="about"> <b>About me</b> </h1>
+    <h1 id="about"> About me </h1>
+    <div class="about">
+      <div><img src="imgs/mshan.jpg" alt="This is an image of Matthew Shan in professional attire"/></div>
+      <div><p> Hello! My name is Matthew Shan and I am a Computer Science major
+        at Grand Valley State University. An interesting fact about myself is
+        that both my parents are Chinese, whereas I was born in Canada and grew
+        up in West Michigan. Some of my interests include playing music (such
+        as piano, guitar, and ukulele), playing strategy games, and of course,
+        coding!  </p></div>
+    </div>
 
-    <h1 id="cs"> <b> Why Computer Science?</b> </h1>
+    <h1 id="cs"> Why Computer Science? <a style="font-size: .6em;" href="files/mshan-essay.pdf" download> [Download PDF Version] </a> </h1>
+    <div class="cs">
+      <p>&emsp; Computer Science is a very versatile field. Technology has become an integral part of our culture, because of its wide range of uses. I view technology as a tool to improve the quality of people’s life. One example is the invention of the printing press. The printing press allowed books to be mass produced, while maintaining an affordable price. This invention allowed the common folks to read, which gave everyone a chance to educate themselves. Another relevant example is the self-driving or autonomous car. I recently read an article from The New York Times that describes a blind man who was given the opportunity to test one of Google self-driving cars. Although the self-driving car is not yet ready for public use, it is a great indicator of its future potentials. That being said, how could I personally use my degree in Computer Science for technological advancement? I want to use my degree to help others. Currently, I am considering three different potent </p>
 
-    <h1 id="school"> <b> My Journey in Detail </b> </h1>
+      <p>&emsp; Software Development is one of my top career choices that I am considering, because I find it very exciting. This is because of the exciting problem solving skills that programming has to offer. Today, everyone uses software on in their daily routines, ranging from the alarm clocks, emails, GPS, the operating systems on smartphones, social media, and so on. All of these technologies are applied into our lives to satisfy our needs. Without the help of these technologies, it would be either very difficult or impossible to achieve these daily tasks. Some software even have the ability to enable tasks to be performed that was not previously possible. As a programmer, I find that it is a joy to create something that could be in practical use, not only because it is satisfying, but because somebody else could use it to make their own lifes easier.
+      </p>
+
+      <p> &emsp; Another career choice that I am considering is also Cyber Security. This career is very important in the field of Computer Science. Everybody's sensitive personal information is stored in a database out there, ranging from banking information to social security IDs. It is important that a security expert does his best to insure that this information is not compromised. Unfortunately, as technology advances, so will methods to abuse the technology. Security experts are up-to-date with secure practices in order to prevent hackers from compromising user data. If I decide with this career choice, I would feel great knowing that each step that I do on the job is in order to protect millions people. Although I perhaps don’t have the skills the be a bodyguard in the real world, I would feel as if I am a bodyguard for people’s personal information.
+      </p>
+
+      <p> &emsp; Now the final potential career choice on my mind is teaching. An option that I consider it that after working for a company for a few decades and gaining experience, something I would like to do is give back to the community. Teaching is one way that I could do this. I have always looked up to my instructors in several different ways, especially those teaching Computer Science. While these instructors could have chosen a different and perhaps are more financially stable career, they still choose to pass on their experience to the others. This is something that I am in awe of, and I look up to these instructors as a role model of society. I hope that if I decide to pursue a similar career, that I would give back to the community on what these instructors have provided me, along with some of my own experiences in the field.
+      </p>
+
+      <p> &emsp;I hope that after I graduate college, I could use my degree to itself fullest. Not only do I want to do something I enjoy, but also something that is productive in society and helpful in terms of improving the quality of life in others. By taking on the career of either a Software Development, Cyber Security, or Teaching, I believe that I can easily achieve this goal of helping others.
+      </p>
+
+    </div>
+
+    <h1 id="school"> My Journey in Detail </h1>
+    <div class="school">
+      <h2> Classes in current Semester: Winter 2018. Classification: Sophomore <button id="showNow"><b>[-]</b></button></h2>
+      <div id="now">
+        <h3> CIS 241: System level programming and Utilities </h3>
+        <p>CIS 241 is one of the next classes I can take after CIS 163. In this
+          class we learn the programming language C and use of the operating
+          system Linux. I am always happy to learn a new languages and new
+          strategies used in programming. Something that I always wanted to
+          familiarize myself with is the Linux operating system. I have heard
+          several good things about it and this class was the first time I had
+          a chance to work with it. </p>
+
+        <h3> COM 201: Speech </h3>
+        <p>Speech is a bit different from my other classes; however, I still
+          recognize it’s importance and values. For anything that human beings
+          do together, it is vital that we communicate properly. In the field
+          of Computer Science, communication is key, as most work is
+          accomplished through teamwork. Even if you are an excellent coder,
+          yet, you lack communication skill, it would be difficult to
+          successfully complete a project with others. </p>
+
+        <h3> MTH 225: Discrete Structures 1 </h3>
+        <p>Discrete Structures 1 is a class centered on applying mathematical
+          concepts to Computer Science. In this class, we have been given the
+          opportunity to implement mathematical functions in Python. After
+          learning this language, I now have a bit of an attachment with the
+          language.  </p>
+
+        <h3> HNR 278/279 History of Science 3 & 4 </h3>
+        <p>This is the second semester of my Honors Sequence. As
+          mentioned below, I believe that it is important for me to understand
+          the scientists in history in order to contribute to future science.
+          In this class, topics that are covered range from the Renaissance era
+          to the Romanticism era. While I enjoy learning the thoughts of several
+           great thinkers such as Aristotle, Dante, Aquinas, and so on, I look
+           forward to learning how thinkers of the early modern era had shaped
+           today’s way of thinking.</p>
+      </div>
+
+      <h2> Classes in first Semester. Fall 2017, classification: Freshmen <button id="showPast"><b>[-]</b></button></h2>
+      <div id="past">
+        <h3> CIS 163: Computer Science II.  </h3>
+        <p>CIS 163 was the first Computer Science class that I took at Grand
+          Valley State University. In the summer, I was looking forward to taking
+          another coding class. In High School, I had coding experience from AP
+          Computer Science, Web and Game Development, and learning in my free time.
+          While I have taken a view coding classes in the past, I have found myself
+          in awe of the passion all my coding teachers have. While I have noticed
+          that every professor or teacher who taught me has a burning passion in
+          their fields, I find that there is something special about Computer Science
+          instructors. These instructors had many different choices in terms of
+          career paths, yet they choose the humble jobs as guides for the next
+          generation of coders. </p>
+
+        <h3> HNR 258/259: History of Science 1 & 2 </h3>
+        <p>History of Science was the Honors Sequence that I choose for this
+          year. I took interest in the History of Science, because I wanted to
+          learn about the thought processes of great thinkers before our time,
+          to whom we are all in debt to. I believe that studying great scientists
+          and philosophers can be quite beneficial in the advancement of technology
+          and may serve as useful knowledge in my future career. This course covers
+          a wide range from Ancient Greece to the Protestant Reformation. Even after
+          one semester of this class, I find myself being able to appreciate several
+          sides of an argument.</p>
+
+        <h3> CHI 201: Intermediate Chinese 1 </h3>
+        <p>Chinese is a subject field that I am considering to take on as a
+          Minor. As a U.S. citizen of Chinese descent, I think it is important
+          for me to better myself in both my parents’ culture and language.
+          While I can speak Chinese quite well, I would like to improve my
+          reading/writing skills. After taking this class, my perspective on my
+          ancestor’s culture has widened.  I am definitely considering is to
+          study abroad at least one time in college, where one of the locations
+          I am interested in is China. Something that touched my heart is the
+          hard work and commitment that other students put into learning the
+          culture and language. It was amazing to see people of all kinds of
+          backgrounds appreciate the culture together. </p>
+
+      </div>
+      <h2> Planned Classes for next semester: Fall 2018, classification: Sophomore <button id="showFuture"><b>[-]</b></button></h2>
+      <div id="future">
+        <h3> CIS 263: Data Structures & Algorithms </h3>
+        <p>From what I know of CIS 263, this class teaches new data structures
+          and algorithms in C++. I have worked with C++ in my high school Web
+          and Game Development course so I am quite excited to go in-depth on
+          the language.  </p>
+
+        <h3> MTH 202: Calculus II </h3>
+        <p>Mathematics is a subject that I have always enjoyed. Before college,
+          mathematics was my favorite subject. By the time I got to high school,
+           I experienced coding for the first time and realized that I could
+           apply mathematical thinking. In this class, I look forward to
+           learning more about integrals and their application in the real
+           world.</p>
+
+        <h3> MTH 325: Discrete Structures II </h3>
+        <p>Once again, I am excited to further apply my interest in mathematics
+          on the next course of Discrete Structures II. My hope is that we can
+          use a language such as Python again to apply what we learn in this
+          class to our field. </p>
+        <h3> Undecided Honors College/ General Education course </h3>
+        <p>While currently I do not know which class I will take as a general
+          education class, I still look forward to whatever class I may take. I
+          strongly believe that it is important to learn subjects outside of our
+           own field in order to widen our own knowledge and perspective.</p>
+
+      </div>
+    </div>
   </div>
+  <footer class="footer page-footer  text-center">
+    <div class="footer-copyright">
+      <h5>©February 28, 2018 &emsp; | &emsp; <a href="https://github.com/matthewshan">Matthew Shan</a></h5>
+    </div>
+    <h6> Images for the slide show were taken from the <a href="https://pixabay.com">PixaBay</a>, a website which provides open source images. </h6>
+  </footer>
+  <a href="#" id="toTop"><b>&#8593;</b></a>
 </body>
 </html>
